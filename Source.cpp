@@ -1,13 +1,14 @@
 #include <iostream>
 #include "Kasyno.h"
+#include "Karta.h"
+#include "Gracz.h"
+#include "Bot.h"
+
 int main()
 {
+ 	srand((int)time(NULL));
 	Kasyno casino;
-	for (int i = 0; i < 100; i++) {
-		std::cout << "\n" << i << ". ";
-		casino.dajKarte();
-	}
-	
+	casino.Graj();
 	std::cin.get();
 	return 0;
 }
